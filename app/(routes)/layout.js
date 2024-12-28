@@ -1,5 +1,6 @@
-import "./globals.css";
 import Navbar from "@/components/Navbar";
+
+
 
 export const metadata = {
   title: "First Next",
@@ -7,12 +8,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    return (
-        <html lang="en">
-        <body className={` antialiased`} >
-             
-          {children}
-        </body>
-      </html>
+  return (
+    <>
+      <Navbar/>
+        {children}
+   
+    </>
+        
   );
 }
